@@ -9,12 +9,6 @@ data2 = pd.read_csv('Android_Ransomware_part_2.csv')
 data3 = pd.read_csv('Android_Ransomware_part_3.csv')
 
 # Combine the datasets
-data = pd.concat([data1, data2, data3], ignore_index=True)
+android = pd.concat([data1, data2, data3], ignore_index=True)
 
-# Save the combined dataset
-data.to_csv('Android_Ransomware.csv', index=False)
-
-# Print the shape of the combined dataset
-print(data.shape)
-
-#End of code
+# Rest of your code goes here
